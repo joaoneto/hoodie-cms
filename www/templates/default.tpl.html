@@ -1,0 +1,17 @@
+<!-- <div class="container">
+  <div class="my-account navbar navbar-inverse pull-right">
+    <div class="navbar-inner">
+      <nav>
+        <ul class="nav">
+          <li ng-show="auth.isLoggedIn()"><a href>{{auth.user.name}}</a></li>
+          <li ng-show="auth.isLoggedIn()"><a ui-sref=".logout">Logout</a></li>
+          <li ng-show="!auth.isLoggedIn()"><a ui-sref=".login">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+ -->
+<div ui-view="header"></div>
+<div ui-view="content" class="content"></div>
+<div ui-view="footer"></div>

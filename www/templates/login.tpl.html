@@ -1,0 +1,14 @@
+<form name="form" class="form-signin" role="form" ng-submit="signIn()" novalidate>
+  <h2 class="form-signin-heading">Login</h2>
+  <div class="alert alert-danger alert-dismissible" role="alert" ng-show="error">
+    {{error}}
+  </div>
+  <input ng-model="login.email" name="email" type="email" class="form-control" placeholder="E-mail" required autofocus>
+  <input ng-model="login.password" name="password" type="password" class="form-control" placeholder="Senha" required>
+  <!-- <div class="checkbox">
+    <label>
+      <input ng-model="login.remember" name="remember" type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div> -->
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+</form>
